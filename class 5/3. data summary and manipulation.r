@@ -50,39 +50,34 @@ library(dplyr)
 # -------------------------------------------
 
 # create a new data frame called client_assets with the columns client_name, total_assets, year, and sector
-  client_assets <- select(data, client_name, total_assets, year, sector)
+  client_assets <- ???
 
 # filter to remove clients with assets less than 0, or above $100m
-  client_assets <- filter(client_assets, total_assets>0, total_assets<1000000)
+  client_assets <- ???
 
 # create a summary table that shows the average assets by year
   assets_by_year <- client_assets %>%
-  					  group_by(year) %>%
-  					  summarize(average_assets = mean(total_assets))
+  					  ???
+  					  ???
 
 
 # create a summary table that shows the average assets by region, by year
-  assets_by_year_by_region <- client_assets %>%
-  					  group_by(year) %>%
-  					  summarize(average_assets = mean(total_assets))
+  assets_by_year_by_region <- ???
+  					  
+
     
 # show both summary tables
-  assets_by_year
-  assets_by_year_by_region
-
+  ??
+  ??
 # create a new column with the most recent year by client, called year_max
 # hint: use mutate instead of summarise to make a new column
-  client_assets <- client_assets %>%
-  					  group_by(client_name) %>%
-  					  mutate(year_max = max(year))
+  ???
 
 # filter so that there is only one one per client, for the most recent year
-  client_assets_one_row <- client_assets %>%
-  					 	 filter(year == year_max)
+  ???
 
 # write the second table to a csv file
-  write.csv(assets_by_year_by_region, 'assets_by_year_by_region.csv')
-  file.show('assets_by_year_by_region.csv')
+  ???
 
 
 # There is a dplyr 'cheatsheet' in two pages here:
