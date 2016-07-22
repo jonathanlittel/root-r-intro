@@ -60,6 +60,8 @@ library(dplyr)
   					  ???
   					  ???
 
+# try plotting that summary table
+  plot(??)
 
 # create a summary table that shows the average assets by region, by year
   assets_by_year_by_region <- ???
@@ -69,6 +71,7 @@ library(dplyr)
 # show both summary tables
   ??
   ??
+
 # create a new column with the most recent year by client, called year_max
 # hint: use mutate instead of summarise to make a new column
   ???
