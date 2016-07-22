@@ -49,8 +49,8 @@ library(dplyr)
 # Part 2: exercises 
 # -------------------------------------------
 
-# create a new data frame called client_assets with the columns client_name, total_assets, year, and sector
-  client_assets <- select(data, client_name, total_assets, year, sector)
+# create a new data frame called client_assets with the columns client_name, total_assets, year, region, and sector
+  client_assets <- select(data, client_name, total_assets, year, region, sector)
 
 # filter to remove clients with assets less than 0, or above $100m
   client_assets <- filter(client_assets, total_assets>0, total_assets<1000000)
@@ -60,10 +60,12 @@ library(dplyr)
   					  group_by(year) %>%
   					  summarize(average_assets = mean(total_assets))
 
+# trying plotting it
+  plot(assets_by_year)
 
 # create a summary table that shows the average assets by region, by year
   assets_by_year_by_region <- client_assets %>%
-  					  group_by(year) %>%
+  					  group_by(region, year) %>%
   					  summarize(average_assets = mean(total_assets))
     
 # show both summary tables
