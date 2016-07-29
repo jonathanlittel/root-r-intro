@@ -86,7 +86,6 @@ library(dplyr)
   write.csv(assets_by_year_by_region, 'assets_by_year_by_region.csv')
   file.show('assets_by_year_by_region.csv')
 
-
 # There is a dplyr 'cheatsheet' in two pages here:
 # http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
 

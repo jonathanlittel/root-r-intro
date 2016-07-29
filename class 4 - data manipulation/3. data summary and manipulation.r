@@ -49,7 +49,7 @@ library(dplyr)
 # Part 2: exercises 
 # -------------------------------------------
 
-# create a new data frame called client_assets with the columns client_name, total_assets, year, and sector
+# create a new data frame called client_assets with the columns client_name, total_assets, year, region and sector
   client_assets <- ???
 
 # filter to remove clients with assets less than 0, or above $100m
@@ -60,7 +60,7 @@ library(dplyr)
   					  ???
   					  ???
 
-# try plotting that summary table
+# try plotting the summary table
   plot(??)
 
 # create a summary table that shows the average assets by region, by year
