@@ -37,6 +37,6 @@
   file.show('revenue_long.csv')
 
 # optional: write output to xlsx  
-  sheetname <- 'revenue'
-  write.xlsx(out, 'revenue_long.xlsx', sheetName = sheetname)
-  file.show('revenue_long.xlsx')
+  # sheetname <- 'revenue'
+  # write.xlsx(out, 'revenue_long.xlsx', sheetName = sheetname) # showNA = FALSE to leave NA values as empty cells
+  # file.show('revenue_long.xlsx')

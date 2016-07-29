@@ -28,7 +28,7 @@
   rev_long$Year <- as.numeric(gsub('rev_', '', rev_long$Year))
 
 # extra credit:
-# try doing both steps at once, using %>%
+# try doing both steps at once, using %>% (ie do rows 19 and 22 in one swoop)
 # select and reshape long to wide  
   rev_long <- rev %>%
     ______________________ %>%
@@ -42,3 +42,6 @@
 # optional: write output to xlsx  
   write.xlsx(_______, _______, sheetName = ______)
   file.show('revenue_long.xlsx')
+
+# solution:
+# https://rootcapital.box.com/s/uhrc1np59rj9e2ynugcvsbu8ai43x146
