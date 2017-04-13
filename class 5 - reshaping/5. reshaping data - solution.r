@@ -1,7 +1,6 @@
 # load libraries
 library(dplyr) # for general manipulation
 library(tidyr) # for reshaping with 'gather'
-library(xlsx)  # for reading/writing excel files
 
 # first, take a look at this article on reshaping:
 # https://blog.rstudio.org/2014/07/22/introducing-tidyr/
